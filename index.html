@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de Actualidad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Noticias de Actualidad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="politica.html">Política</a></li>
+                <li><a href="economia.html">Economía</a></li>
+                <li><a href="deportes.html">Deportes</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="noticias-destacadas">
+            <h2>Noticias Destacadas</h2>
+            <div class="carousel">
+                <div class="carousel-item active">
+                  <img src="imagen/imagen_telescopio.jpg" alt="Imagen del telescopio James Webb">
+                  <div class="carousel-caption">
+                    <h3>El telescopio James Webb captura imágenes impresionantes de una galaxia lejana</h3>
+                    <p>El telescopio espacial James Webb ha revelado imágenes impresionantes...</p>
+                    <a href="#" class="leer-mas">Leer más</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagen/imagen_inteligencia_artificial.jpg" alt="Imagen de inteligencia artificial">
+                  <div class="carousel-caption">
+                    <h3>Avances en Inteligencia Artificial revolucionan la industria</h3>
+                    <p>La inteligencia artificial (IA) está experimentando un rápido desarrollo...</p>
+                    <a href="#" class="leer-mas">Leer más</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagen/imagen_cambio_climatico.jpg" alt="Imagen del cambio climático">
+                  <div class="carousel-caption">
+                    <h3>Nuevo informe advierte sobre los efectos del cambio climático</h3>
+                    <p>Un nuevo informe de las Naciones Unidas advierte sobre las graves consecuencias...</p>
+                    <a href="#" class="leer-mas">Leer más</a>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-prev">Anterior</button>
+              <button class="carousel-next">Siguiente</button>
+        </section>
+
+        <section class="noticias">
+            <h2>Últimas Noticias</h2>
+            <article>
+                <img src="imagen/imagen_inteligencia_artificial.jpg" alt="Imagen de inteligencia artificial">
+                <h3>Avances en Inteligencia Artificial revolucionan la industria</h3>
+                <p>La inteligencia artificial (IA) está experimentando un rápido desarrollo, con nuevas aplicaciones que surgen en diversos campos, desde la medicina hasta la industria automotriz. <a href="#" class="leer-mas">Leer más</a></p>
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://example-blog.disqus.com/embed.js'; // Reemplaza 'example-blog' con tu nombre de sitio en Disqus
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </article>
+
+            <article>
+                <img src="imagen/imagen_cambio_climatico.jpg" alt="Imagen del cambio climático">
+                <h3>Nuevo informe advierte sobre los efectos del cambio climático</h3>
+                <p>Un nuevo informe de las Naciones Unidas advierte sobre las graves consecuencias del cambio climático, incluyendo el aumento del nivel del mar, eventos climáticos extremos y la pérdida de biodiversidad. <a href="#" class="leer-mas">Leer más</a></p>
+                <div id="disqus_thread"></div>
+                <script>
+                    // ... (código de Disqus igual que en el artículo anterior) ...
+                </script>
+            </article>
+
+            <article>
+                <img src="imagen/imagen_metaverso.jpg" alt="Imagen del metaverso">
+                <h3>El metaverso se expande con nuevas experiencias inmersivas</h3>
+                <p>El metaverso continúa expandiéndose, con empresas como Meta y Microsoft invirtiendo en nuevas tecnologías para crear experiencias inmersivas y conectar a las personas en mundos virtuales. <a href="#" class="leer-mas">Leer más</a></p>
+                <div id="disqus_thread"></div>
+                <script>
+                    // ... (código de Disqus igual que en el artículo anterior) ...
+                </script>
+            </article>
+        </section>
+
+        <aside class="mas-leidas">
+            <h2>Más Leídas</h2>
+            <ul>
+              <li><a href="#">Noticia más leída 1</a></li>
+              <li><a href="#">Noticia más leída 2</a></li>
+              <li><a href="#">Noticia más leída 3</a></li>
+            </ul>
+        </aside>
+
+        <form class="suscripcion">
+            <h2>Suscríbete a nuestro boletín</h2>
+            <input type="email" name="email" placeholder="Ingresa tu email" required>
+            <button type="submit">Suscribirme</button>
+          </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Noticias de Actualidad</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

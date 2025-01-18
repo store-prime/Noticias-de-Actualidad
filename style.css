@@ -1,0 +1,234 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    line-height: 1.6;
+    color: #333; 
+}
+
+:root {
+  --primary-color: #007bff; 
+  --secondary-color: #6c757d; 
+  --light-color: #f8f9fa; 
+  --dark-color: #343a40; 
+}
+
+header {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: var(--primary-color); 
+}
+
+/* Estilos para la sección de noticias destacadas */
+.noticias-destacadas {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.noticia-destacada img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    margin: 0 auto 20px; 
+    display: block; 
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none; 
+}
+
+.carousel-item.active {
+    display: block; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; 
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1); 
+}
+
+.carousel-caption { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+}
+
+.carousel-prev, 
+.carousel-next { 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Estilos para las noticias generales */
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+article:hover {
+  transform: translateY(-5px); 
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
+
+article h3 {
+    margin-top: 10px;
+    color: var(--primary-color); 
+}
+
+.leer-mas {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--primary-color); 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.leer-mas:hover {
+    background-color: var(--dark-color); 
+}
+
+/* Estilos para la sección "Más leídas" */
+.mas-leidas {
+    width: 30%; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--light-color); 
+}
+
+.mas-leidas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mas-leidas a { 
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mas-leidas a:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos para el formulario de suscripción */
+.suscripcion {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--light-color);
+}
+
+.suscripcion input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.suscripcion button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suscripcion button[type="submit"]:hover {
+    background-color: var(--dark-color);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px; 
+}
+
+/* Media queries para responsive design */
+@media (max-width: 768px) { 
+    .noticias {
+        flex-direction: column; 
+    }
+
+    article {
+        width: 100%; 
+    }
+
+    .mas-leidas {
+        width: 100%;
+    }
+}
